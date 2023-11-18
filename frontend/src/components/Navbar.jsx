@@ -1,17 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Navbar.css'
-//import logo from '../images/logo.png'
+import logo from '../images/logo.png'
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div className='navbar'>
-        <div className='navbar-content'>
-         
-            <img src="" alt="Logo" />
-            {/* <form className='search-bar' action=""> 
-
-            </form> */}
+        <div className='navbar-content'>       
+            <img src={logo} alt="Logo" />
             <ul className='navbar-links'>
                 <li className='list-item'>Log in</li>
                 <li className='list-item'>Cart</li>

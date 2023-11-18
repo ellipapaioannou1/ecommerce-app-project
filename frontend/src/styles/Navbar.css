@@ -1,11 +1,6 @@
-/* Navbar container */
-.navbar {
-    color: #000000; /* Text color for the header */
-    padding: 20px 0;
-    top: 0;
-    width: 100%;
-  }
-  
+ .navbar{
+  background-color: rgba(253, 253, 253, 0.2);
+ }
   /* Navbar content */
   .navbar-content {
     display: flex;
@@ -13,12 +8,13 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
   }
   .navbar img {
-    width: 100px; /* Adjust the width as needed for the desired size */
+    width: 110px; /* Adjust the width as needed for the desired size */
     height: 100px; /* Set the height to match the width for a circular shape */
-  
+    object-fit: contain;
+    
 
   }
   /* Logo styles */
@@ -27,35 +23,7 @@
     font-weight: 700;
     margin: 0;
   }
-  
-  /* Search bar styles */
-  .search-bar {
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-bar input[type="text"] {
-    border: none;
-    border-radius: 5px;
-    padding: 8px;
-    margin-right: 10px;
-    width: 200px;
-  }
-  
-  .search-bar button {
-    background-color: #000000; /* Button background color */
-    color: #fff; /* Button text color */
-    border: none;
-    border-radius: 5px;
-    padding: 8px 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .search-bar button:hover {
-    background-color: #ff845a; /* Button background color on hover */
-  }
-  
+
   /* Navbar links styles */
   .navbar-links {
     list-style: none;

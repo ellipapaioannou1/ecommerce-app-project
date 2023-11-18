@@ -4,16 +4,16 @@ import '../styles/Homepage.css'
 
 const Homepage = () => {
   return (
-  <div>
-    <div className='background'>
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corrupti labore, beatae quod animi dolores consectetur neque sunt repudiandae dolor minus, veniam enim atque nostrum alias illum. Sint, voluptate facilis!
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nisi id quae harum ducimus officia ad, molestias provident placeat magni eaque quidem impedit, vero mollitia, perferendis sit aperiam sint ipsam?
-     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore placeat earum numquam, optio nam quae magni dolorum, amet, reprehenderit molestiae debitis error est ipsam! Est officia nam tempora quae velit.
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt voluptatum accusamus non. Magnam numquam nisi, rerum totam placeat quis? Dicta nulla saepe at fuga, eveniet ad iusto vero ratione?
-    </div>
+<div className='home'>
+<div className='intro'>
+  <h1>Welcome to BearWear</h1>
+  <h2>Your One-Stop Shop for Vibrant Scrunchies and Stylish Clutches</h2>
+  <p>Discover a world of colors and express your unique style with our handcrafted scrunchies and fashionable clutches. From bold patterns to pastel hues, we have something for every mood and occasion.</p>
+  <a href="#shop-now" className="cta-button">Shop Now</a>
+</div>
+</div>
 
 
-  </div>
   
   )
 }
