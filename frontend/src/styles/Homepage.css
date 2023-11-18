@@ -1,0 +1,9 @@
+.background {
+
+  background-color: blue;
+  text-transform: capitalize;
+}
+
+* {
+  margin: auto;
+}

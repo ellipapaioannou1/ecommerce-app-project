@@ -1,0 +1,24 @@
+.category-card-container {
+    display: flex;
+    overflow-x: auto; /* Add horizontal scrolling if necessary */
+  }
+  
+  .category-card {
+    min-width: 200px; /* Adjust the width as needed */
+    margin-right: 20px; /* Add spacing between cards */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .category-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .category-card h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
