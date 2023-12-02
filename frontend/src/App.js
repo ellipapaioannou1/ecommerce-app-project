@@ -1,31 +1,30 @@
 import React from 'react';
+import { QueryClient, QueryClientProvider } from 'react-query';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import Categories from './pages/Categories';
 import  './App.css';
 import Homepage from './pages/Homepage';
+import Products from './pages/Products';
+import ProductDetails from './pages/ProductDetails';
 
-
-
+const queryClient = new QueryClient();
 const App = () => {
   return (
-    <div>
+    <QueryClientProvider client={queryClient}>
       <Router>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Homepage />} />
-        <Route path='/categories' element={<Categories />} />
-      </Routes>
-
-      
-
-     
-      <Footer />
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Homepage />} />
+          <Route path='/products' element={<Products />} />
+          <Route path='/products/:id' element={<ProductDetails />} />
+        </Routes>
+        <Footer />
       </Router>
-      
-    </div>
+    </QueryClientProvider>
   );
 };
+
+
 
 export default App;

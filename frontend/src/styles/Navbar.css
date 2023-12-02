@@ -1,5 +1,5 @@
  .navbar{
-  background-color: rgba(253, 253, 253, 0.2);
+  background-color: #ffffff;
  }
   /* Navbar content */
   .navbar-content {
@@ -34,10 +34,9 @@
   }
   
   .list-item {
+    text-decoration: none;
     margin-right: 20px;
     padding: 10px;
-    border-radius: 50%;
-    background-color: rgba(87, 87, 87, 0.2); /* Adjust the margin between list items */
   }
   
   .list-item:last-child {

@@ -1,16 +1,15 @@
 import image1 from '../images/image1.jpg';
-import image2 from '../images/image2.jpg';
-import image3 from '../images/image3.jpg';
+
+import image2 from '../images/image2.png';
 
 const categories = [
   {
     image: image1,
-  },
-  {
-    image: image3,
-  },
+    name: "Scrunchies",
+  }, 
   {
     image: image2,
+    name: "Bags",
   },
 ];
 
