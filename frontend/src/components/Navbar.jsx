@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../styles/Navbar.css'
 import logo from '../images/logo.png'
 import { Link } from 'react-router-dom';
@@ -11,9 +11,8 @@ const Navbar = () => {
             <img src={logo} alt="Logo" />
             </Link>   
             <ul className='navbar-links'>
-                <li className='list-item'>Log in</li>
-                <li className='list-item'>Cart</li>
-                <Link to="/categories" className='list-item'>Products</Link>
+            <Link to="/products" className='list-item'>Products</Link>
+                <Link to="/cart" className='list-item'>Cart</Link>
             </ul>
         </div>
     </div>

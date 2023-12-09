@@ -7,7 +7,7 @@ body {
   .footer {
     background-color: rgb(243, 242, 237);
     color: #282828;
-    padding: 10px 0;
+    padding: 5px 0;
   }
 
   .container {
@@ -20,10 +20,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
+    
   }
   
   .footer-section {
     text-align: center;
+
   }
   
   .footer-section h3 {
@@ -31,26 +33,21 @@ body {
     margin-bottom: 15px;
   }
   
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section li {
-    margin-bottom: 8px;
-  }
   
   .footer-section a {
     color: #fff;
+
     text-decoration: none;
   }
   
   .footer-section a:hover {
     text-decoration: underline;
+    
   }
   
   .footer-section i {
     margin-right: 8px;
+
   }
   
   .footer-bottom {

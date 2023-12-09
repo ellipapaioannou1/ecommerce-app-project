@@ -1,5 +1,5 @@
  .navbar{
-  background-color: #ffffff;
+  background-color: rgb(250, 189, 237,0.5);
  }
   /* Navbar content */
   .navbar-content {
@@ -7,23 +7,16 @@
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
+    height: 90px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 ;
   }
   .navbar img {
     width: 110px; /* Adjust the width as needed for the desired size */
     height: 100px; /* Set the height to match the width for a circular shape */
     object-fit: contain;
-    
-
+  
   }
-  /* Logo styles */
-  .navbar h1 {
-    font-size: 34px; /* Adjust the font size */
-    font-weight: 700;
-    margin: 0;
-  }
-
   /* Navbar links styles */
   .navbar-links {
     list-style: none;
@@ -39,19 +32,19 @@
     padding: 10px;
   }
   
-  .list-item:last-child {
-    margin-right: 0; /* Remove margin for the last item */
-  }
-  
+
   .list-item a {
     text-decoration: none;
     font-weight: 500;
     color: #fff; /* Text color for links */
-    transition: color 0.3s;
- 
+
   }
   
-  .list-item a:hover {
-    color: #ff5733; /* Text color on hover */
+  a:visited {
+    color: inherit; /* or set your desired color for visited links */
   }
   
+  /* Active state (when clicked) */
+  a:active {
+    color: inherit; /* or set your desired color for active links */
+  }

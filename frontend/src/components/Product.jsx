@@ -13,9 +13,11 @@ const Product = (props) => {
                 <p><b>{name}</b></p>
                 <p>{price}€</p>
             </div>
-            <div className="description">{description}</div>
         </div>
     );
 }
 
 export default Product;
+
+
+

@@ -1,5 +1,5 @@
 import React from 'react';
-import Product from '../components/Product';
+import Product from '../components/Product.jsx';
 import '../styles/Products.css'
 import { Link } from 'react-router-dom';
 import { useQuery } from 'react-query';
@@ -13,9 +13,9 @@ if (isLoading) return 'Loading...'
 if (error) return `an error ${error}`
     return (
         <div className='products'>
-            {products.map((product) => (
-                   <Link key={product._id} to={`/products/${product._id}`}>
-                     <Product data={product} />
+            {products.map((product) => (   
+                   <Link className='link' key={product._id} to={`/products/${product._id}`}>
+                      <Product data={product} />
                    </Link>
             ))}
         </div>

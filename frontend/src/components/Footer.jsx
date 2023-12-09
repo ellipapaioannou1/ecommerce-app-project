@@ -11,18 +11,16 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <h3>Contact Us</h3>
-            <ul>
-              <li><i className="fas fa-map-marker-alt"></i> Athens,Greece</li>
-              <li><i className="fas fa-envelope"></i> bearwear@gmail.com</li>
-              <li><i className="fas fa-phone"></i> +30 210 9000000</li>
-            </ul>
+      
+              <i className="fas fa-map-marker-alt"></i> Athens,Greece
+             <i className="fas fa-envelope"></i> bearwear@gmail.com
+            <i className="fas fa-phone"></i> +30 210 9000000
+
           </div>
           <div className="footer-section">
             <h3>Connect with us</h3>
-            <ul>
-              <li><a href="#"><FontAwesomeIcon icon={faInstagram} style={{color: "#e7748b",}} /></a></li>
-              <li><a href="#"><FontAwesomeIcon icon={faFacebookF} style={{color: "#1452ff",}} /></a></li>
-            </ul>
+              <a href="#"><FontAwesomeIcon icon={faInstagram} style={{color: "#e7748b",}} /></a>
+              <a href="#"><FontAwesomeIcon icon={faFacebookF} style={{color: "#1452ff",}} /></a>
           </div>
         </div>
       </div>
