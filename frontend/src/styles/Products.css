@@ -34,3 +34,20 @@
   .link {
     text-decoration: none;
   }
+
+  .link:hover {
+    text-decoration: none;
+  }
+
+  .view-btn {
+    border-radius: 10px;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+    background-color: #f4f4e3;
+    padding: 10px;
+  }
+
+  .view-btn:hover {
+    background-color: #f48da9;
+    color: white;
+  }

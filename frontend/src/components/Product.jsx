@@ -3,7 +3,7 @@ import '../styles/Products.css'
 
 
 const Product = (props) => {
-    const { name, price, description, image } = props.data;
+    const { name, price, image } = props.data;
     
 
     return (
@@ -13,6 +13,7 @@ const Product = (props) => {
                 <p><b>{name}</b></p>
                 <p>{price}€</p>
             </div>
+            <button className="view-btn" onClick={'/products/:id'}>View Product</button>
         </div>
     );
 }

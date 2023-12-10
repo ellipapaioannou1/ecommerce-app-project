@@ -2,7 +2,7 @@
   min-height: 60vh;
 }
 
-.container1 {
+.container {
     max-width: 70%;
     margin: 10%;
     padding: 50px;
@@ -31,7 +31,7 @@
     padding: 15px 0;
   }
   
-  .container1 img {
+  .container img {
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -39,11 +39,11 @@
     margin-right: 15px;
   }
   
-  .container1 p {
+  .container p {
     margin: 0;
   }
   
-  .container1 button {
+  .container button {
     background-color: #ec0000;
     color: #fff;
     border: none;
@@ -53,7 +53,7 @@
     transition: background-color 0.3s;
   }
   
-  .container1 button:hover {
+  .container button:hover {
     background-color: rgb(236, 6, 6);
   }
   
@@ -64,7 +64,7 @@
     font-size: 1.2em;
   }
   
-  .container1 .complete-order-btn {
+  .container .complete-order-btn {
     background-color: #009c1d;
     color: #fff;
     padding: 12px 20px;
@@ -76,7 +76,7 @@
     margin-left: auto;
   }
   
-  .container1 .complete-order-btn:hover {
+  .container .complete-order-btn:hover {
     background-color: #016113;
     color: #fff;
   }

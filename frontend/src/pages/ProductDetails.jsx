@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from 'react-query';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import '../styles/ProductDetails.css';
 
 const ProductDetails = ({cartId}) => {
@@ -19,7 +19,8 @@ const ProductDetails = ({cartId}) => {
         <p>{price}€</p>
       </div>
       <div className="product-description">{description}</div>
-      <button onClick={() => fetch(`http://localhost:5000/carts/${cartId}/add/${id}`, {method: 'PUT'})  }>Add to cart</button>
+      <button className='add-to-cart-btn' onClick={() => fetch(`http://localhost:5000/carts/${cartId}/add/${id}`, {method: 'PUT'})  }>Add to cart</button>
+      <button className='back'><Link to="/products">Back</Link></button>
     </div>
   );
 };
