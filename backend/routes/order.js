@@ -5,8 +5,8 @@ const orderRouter = Router();
 // CREATE
 orderRouter.post("/", async (req, res) => { 
       const savedOrder = await new Order(req.body).save();
-      res.status(200).json(savedOrder);
-
+    res.status(200).json(savedOrder);
+      
   });
 
   

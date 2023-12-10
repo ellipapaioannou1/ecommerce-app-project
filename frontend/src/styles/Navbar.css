@@ -1,37 +1,38 @@
  .navbar{
-  background-color: rgb(250, 189, 237,0.5);
+  background-color: #ffcfd6;
+  border-bottom: 1px solid #444;
  }
-  /* Navbar content */
-  .navbar-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    height: 90px;
-    margin: 0 auto;
-    padding: 0 ;
-  }
-  .navbar img {
-    width: 110px; /* Adjust the width as needed for the desired size */
-    height: 100px; /* Set the height to match the width for a circular shape */
-    object-fit: contain;
-  
-  }
-  /* Navbar links styles */
-  .navbar-links {
-    list-style: none;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .list-item {
-    text-decoration: none;
-    margin-right: 20px;
-    padding: 10px;
-  }
-  
+
+.navbar-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+height: 90px;
+margin: 0 auto;
+padding: 0 ;
+}
+.navbar img {
+width: 110px; /* Adjust the width as needed for the desired size */
+height: 100px; /* Set the height to match the width for a circular shape */
+object-fit: contain;
+
+}
+/* Navbar links styles */
+.navbar-links {
+font-family: serif;
+list-style: none;
+font-size: 30px;
+margin: 0;
+padding: 0;
+}
+
+.list-item {
+text-decoration: none;
+margin-right: 20px;
+padding: 10px;
+}
+
 
   .list-item a {
     text-decoration: none;

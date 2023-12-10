@@ -1,7 +1,8 @@
 import React, { useCallback } from 'react';
 import { useQuery } from 'react-query';
 import '../styles/Cart.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 const Cart = ({ cartId }) => {
   
   const { data, isLoading, error, refetch} = useQuery('cartData', () =>
@@ -20,7 +21,7 @@ const Cart = ({ cartId }) => {
 
   console.log('Cart data:', data); 
   return (
-    <div>
+    <div className='container1'>
       <h2>Your Cart</h2>
       {data.products.length === 0 ? (
         <p>Your cart is empty.</p>
@@ -31,15 +32,15 @@ const Cart = ({ cartId }) => {
               <img src={`/productImages/${item.image}`} />
               <p>{item.name}</p>
               <p>Price: ${item.price}</p>
-              <button onClick={() => onRemoveItem(item._id)}>Remove item</button>
+              <button  onClick={() => onRemoveItem(item._id)}><FontAwesomeIcon icon={faTrashCan} /></button>
             </li>
           ))}          
         </ul>
         
       )}
-      <div>
-        <p>Your Cart Total: ${total} </p>
-        <button onClick={() => fetch(`http://localhost:5000/orders`, {method: 'POST'}) } >Complete Order</button>
+      <div className='complete-order'>
+        <p className='cart-total'>Your Cart Total: ${total} </p>
+        <button className='complete-order-btn' onClick={() => fetch(`http://localhost:5000/orders`, {method: 'POST'}) } >Complete Order</button>
       </div>
     </div>
   );
