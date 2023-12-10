@@ -21,6 +21,7 @@ const Cart = ({ cartId }) => {
 
   console.log('Cart data:', data); 
   return (
+    <div className='page'>
     <div className='container1'>
       <h2>Your Cart</h2>
       {data.products.length === 0 ? (
@@ -42,6 +43,7 @@ const Cart = ({ cartId }) => {
         <p className='cart-total'>Your Cart Total: ${total} </p>
         <button className='complete-order-btn' onClick={() => fetch(`http://localhost:5000/orders`, {method: 'POST'}) } >Complete Order</button>
       </div>
+    </div>
     </div>
   );
 };

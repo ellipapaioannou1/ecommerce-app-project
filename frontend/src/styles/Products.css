@@ -4,18 +4,17 @@
     display: flex;
     flex-wrap: wrap;
     padding: 40px;
-    background-color: rgb(100, 56, 83);
+    background-color: #ffe4eb;
    
   }
   
   .product {
-    border: 1px solid #000000;
     border-radius: 5px;
     margin: 50px;
     padding: 15px;
     width: 500px;
     text-align: center;
-    background-color: rgb(144, 110, 136);
+    background-color:#fbd5cc;
   }
   
   .product img {

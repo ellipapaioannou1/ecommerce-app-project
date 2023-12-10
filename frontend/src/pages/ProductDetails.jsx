@@ -11,19 +11,17 @@ const ProductDetails = ({cartId}) => {
   if (error) return `an error ${error}`
   const { name, price, description, image } = data;
 
-  
   return (
-    
-    <div className="product">
+    <div className="product-detail">
       <img src={`/productImages/${image}`} alt={name} />
-      <div className="info">
+      <div className="product-info">
         <p><b>{name}</b></p>
         <p>{price}€</p>
       </div>
-      <div className="description">{description}</div>
+      <div className="product-description">{description}</div>
       <button onClick={() => fetch(`http://localhost:5000/carts/${cartId}/add/${id}`, {method: 'PUT'})  }>Add to cart</button>
     </div>
   );
-}
+};
 
 export default ProductDetails;

@@ -1,6 +1,5 @@
  .navbar{
   background-color: #ffcfd6;
-  border-bottom: 1px solid #444;
  }
 
 .navbar-content {
@@ -33,14 +32,15 @@ margin-right: 20px;
 padding: 10px;
 }
 
-
   .list-item a {
     text-decoration: none;
     font-weight: 500;
     color: #fff; /* Text color for links */
 
   }
-  
+  a:hover {
+    text-decoration: underline;
+  }
   a:visited {
     color: inherit; /* or set your desired color for visited links */
   }
@@ -49,3 +49,7 @@ padding: 10px;
   a:active {
     color: inherit; /* or set your desired color for active links */
   }
+
+
+
+  

@@ -1,7 +1,11 @@
+.page {
+  min-height: 60vh;
+}
+
 .container1 {
     max-width: 70%;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 10%;
+    padding: 50px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
