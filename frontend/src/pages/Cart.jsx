@@ -21,7 +21,8 @@ const Cart = ({ cartId }) => {
   
   //Calculate the total amount of cart's items
   const total = data.products.reduce((acc, item) => acc + item.price, 0);
-
+  
+  const alertOrder = () => alert("Thank you for your order!!");
   return (
     <div className='page'>
       <div className='container'>
@@ -45,7 +46,10 @@ const Cart = ({ cartId }) => {
             <p className='cart-total'>Total: ${total} </p>
             <button
               className='complete-order-btn'
-              onClick={() => fetch(`http://localhost:5000/orders`, { method: 'POST' })}
+              onClick={() => {
+                fetch(`http://localhost:5000/orders`, { method: 'POST' });
+                alertOrder();
+              }}
               disabled={data.products.length === 0}
             >
               Complete Order

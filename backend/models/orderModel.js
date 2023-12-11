@@ -2,8 +2,9 @@ import mongoose from "mongoose";
 
 const orderSchema = mongoose.Schema({
     items: [
-        { 
-        
+        { type: mongoose.SchemaTypes.ObjectId,
+            required: true,
+            ref: 'Product',
         }
     ],
     totalCost: {
@@ -11,11 +12,6 @@ const orderSchema = mongoose.Schema({
         required: true,
         default: 0.0,
     },
-    cartId: {
-        type: mongoose.SchemaTypes.ObjectId,
-        required: true,
-        ref: 'Cart',
-    }
 
  
  },
