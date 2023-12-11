@@ -1,9 +1,23 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { useQuery } from 'react-query';
 import { useParams, Link } from 'react-router-dom';
 import '../styles/ProductDetails.css';
 
 const ProductDetails = ({cartId}) => {
+  const [clickCount, setClickCount] = useState(0);
+  const [buttonText, setButtonText] = useState('Add to cart');
+
+  const addToCart = () => {
+    fetch(`http://localhost:5000/carts/${cartId}/add/${id}`, { method: 'PUT' });
+    setClickCount((prevCount) => prevCount + 1);
+    setButtonText(`${clickCount + 1}`);
+  };
+
+  useEffect(() => {
+    if (clickCount > 0) {
+      setButtonText(`${clickCount}`);
+    }
+  }, [clickCount]);
   const { id } = useParams(); //product id
   const {data, isLoading, error} = useQuery(`fetchProduct: ${id}`,() => 
   fetch(`http://localhost:5000/products/${id}`).then(res => res.json()) ) 
@@ -19,7 +33,7 @@ const ProductDetails = ({cartId}) => {
         <p>{price}€</p>
       </div>
       <div className="product-description">{description}</div>
-      <button className='add-to-cart-btn' onClick={() => fetch(`http://localhost:5000/carts/${cartId}/add/${id}`, {method: 'PUT'})  }>Add to cart</button>
+      <button className='add-to-cart-btn' onClick={() => addToCart()}>{buttonText}</button>
       <button className='back'><Link to="/products">Back</Link></button>
     </div>
   );
