@@ -7,6 +7,7 @@ dotenv.config();
 //Connect to MongoDB
 connectDB();
 
+//Sample product data
 const PRODUCTS = [
     {
         _id: new ObjectId("656b588d65a6e683d04c4045"),

@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+//Cart model
 const cartSchema = new mongoose.Schema({
     // Array of product ids associated with the cart
     products: [{

@@ -12,10 +12,10 @@ const Navbar = () => {
           <Link to='/'>    
             <img src={logo} alt="Logo" />
           </Link>   
-          <ul className='navbar-links'>
+          <div className='navbar-links'>
             <Link to="/products" className='list-item'>Products</Link>
             <Link to="/cart" className='list-item'><FontAwesomeIcon icon={faCartShopping} style={{color: "#000000",}} /></Link>
-          </ul>
+          </div>
         </div>
     </div>
   );

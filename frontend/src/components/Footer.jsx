@@ -6,7 +6,7 @@ import '../styles/Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <div className="footer">
           <div className="footer-section">
             <p><a href="mailto:info@bearwear.com"><FontAwesomeIcon icon={faEnvelope}/></a> info@bearwear.com</p>
             <p><a href="http://instagram.com/bearwear"><FontAwesomeIcon icon={faInstagram} style={{color: "#e7748b",}}/></a> _BearWear</p>
@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>&copy; 2023 BearWear. All rights reserved.</p>
       </div>
-    </footer>
+    </div>
   );
 };
 
