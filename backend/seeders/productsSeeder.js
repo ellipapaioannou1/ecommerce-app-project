@@ -1,10 +1,10 @@
 import connectDB from "../config/db.js";
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 import Product from "../models/productModel.js";
 import { ObjectId } from "mongodb";
+
 dotenv.config();
-
-
+//Connect to MongoDB
 connectDB();
 
 const PRODUCTS = [
@@ -68,6 +68,6 @@ const PRODUCTS = [
 
 ];
 
-
+//Insert sample products to Products collection
 await Product.insertMany(PRODUCTS);
 process.exit(0);

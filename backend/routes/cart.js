@@ -1,15 +1,17 @@
 import { Router } from "express";
 import Cart from "../models/cartModel.js";
 import Product from "../models/productModel.js";
+
 const cartRouter = Router();
 
-
+//CREATE new cart
 cartRouter.post("/", async (req,res) => {
     const cart = new Cart();
     await cart.save();
     res.status(200).json({id: cart._id});
 })
 
+//GET cart by id
 cartRouter.get("/:id", async (req,res) => {
     const cart = await Cart.findById(req.params.id);
     const products = await Promise.all(
@@ -18,9 +20,7 @@ cartRouter.get("/:id", async (req,res) => {
      res.status(200).json({
         id: cart._id,
         products
-     });
- }
-    
+     });   }
 )
 
 cartRouter.put("/:id/add/:productId", async (req,res) => {

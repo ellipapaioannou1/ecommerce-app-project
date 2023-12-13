@@ -3,7 +3,6 @@ import { QueryClient, QueryClientProvider, useMutation } from 'react-query';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import  './App.css';
 import Homepage from './pages/Homepage';
 import Products from './pages/Products';
 import ProductDetails from './pages/ProductDetails';

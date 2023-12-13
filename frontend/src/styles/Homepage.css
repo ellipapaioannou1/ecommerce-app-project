@@ -1,70 +1,67 @@
-/* Homepage.css */
-
 .home {
-  position: relative;
+	position: relative;
 }
 
 .home::before {
-  content: "";
-  background-image: url('../images/homepage-bg.jpg');
-  background-size:cover;  background-position: center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+	content: "";
+	background-image: url(../images/homepage-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
 }
 
 .intro {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
-  align-items: center;
-  text-align: center;
-  padding: 50px;
-  color: rgb(24, 24, 48);
-
-  font-weight: 600;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	align-items: center;
+	text-align: center;
+	padding: 50px;
+	color: #181830;
+	font-weight: 600;
 }
 
 .intro h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+	font-size: 2.5rem;
+	margin-bottom: 10px;
 }
 
 .intro h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+	font-size: 1.8rem;
+	margin-bottom: 20px;
 }
 
 .intro p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  max-width: 600px;
+	font-size: 1.2rem;
+	margin-bottom: 30px;
+	max-width: 600px;
 }
 
 .cta-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #ff96b6;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
- 
-  font-size: 1.2rem;
-  transition: background-color 0.3s ease;
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #ff96b6;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	transition: background-color .3s ease;
 }
 
 .cta-button:hover {
-  background-color: #ff4f4f;
+	background-color: #ff4f4f;
 }
 
 .intro img {
-  max-width: 100%;
-  height: auto;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }

@@ -1,84 +1,82 @@
 .page {
-  min-height: 60vh;
+	min-height: 60vh;
 }
 
 .container {
-    max-width: 70%;
-    margin: 10%;
-    padding: 50px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  h2 {
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-bottom: 1px solid #ddd;
-    padding: 15px 0;
-  }
-  
-  .container img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-right: 15px;
-  }
-  
-  .container p {
-    margin: 0;
-  }
-  
-  .container button {
-    background-color: #ec0000;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .container button:hover {
-    background-color: rgb(236, 6, 6);
-  }
-  
-  .cart-total {
-    margin-top: 20px;
-    text-align: right;
-    font-weight: bold;
-    font-size: 1.2em;
-  }
-  
-  .container .complete-order-btn {
-    background-color: #009c1d;
-    color: #fff;
-    padding: 12px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display: block;
-    margin-top: 20px;
-    margin-left: auto;
-  }
-  
-  .container .complete-order-btn:hover {
-    background-color: #016113;
-    color: #fff;
-  }
-  
+	max-width: 70%;
+	margin: 10%;
+	padding: 50px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 20px #0000001a;
+	font-family: 'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
 
+h2 {
+	color: #333;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border-bottom: 1px solid #ddd;
+	padding: 15px 0;
+}
+
+.container img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 4px;
+	margin-right: 15px;
+}
+
+.container p {
+	margin: 0;
+}
+
+.container button {
+	background-color: #ec0000;
+	color: #fff;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color .3s;
+}
+
+.container button:hover {
+	background-color: #ec0606;
+}
+
+.cart-total {
+	margin-top: 20px;
+	text-align: right;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+
+.container .complete-order-btn {
+	background-color: #009c1d;
+	color: #fff;
+	padding: 12px 20px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background-color .3s;
+	display: block;
+	margin-top: 20px;
+	margin-left: auto;
+}
+
+.container .complete-order-btn:hover {
+	background-color: #016113;
+	color: #fff;
+}

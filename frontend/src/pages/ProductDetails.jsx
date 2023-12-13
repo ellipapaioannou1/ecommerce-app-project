@@ -40,3 +40,4 @@ const ProductDetails = ({cartId}) => {
 };
 
 export default ProductDetails;
+

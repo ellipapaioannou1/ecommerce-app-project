@@ -1,44 +1,40 @@
-.navbar{
-  background-color: #ffcfd6;
+.navbar {
+	background-color: #ffcfd6;
 }
 
 .navbar-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  height: 90px;
-  margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	height: 90px;
+	margin: 0 auto;
 }
 
 .navbar img {
-  width: 110px; 
-  height: 100px; 
-  object-fit: contain;
+	width: 110px;
+	height: 100px;
+	object-fit: contain;
 }
 
 .navbar-links {
-  font-family: serif;
-  font-size: 30px;
+	font-family: serif;
+	font-size: 25px;
 }
 
 .list-item {
-  text-decoration: none;
-  margin-right: 30px;
+	text-decoration: none;
+	margin-right: 30px;
 }
 
 a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 a:visited {
-  color: inherit;
+	color: inherit;
 }
 
 a:active {
-  color: inherit;
+	color: inherit;
 }
-
-
-
-  
