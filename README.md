@@ -8,7 +8,7 @@ Bearwear is a basic e-commerce app developed with Express.js and Node.js for the
 - Node.js (v20.6.1)
 - npm (version 10.1.0)
 - Docker (version 4.25.2)
-- MongoDB (Docker image: 5acb2131d51f) - docker pull 5acb2131d51f
+- MongoDB (Docker image: mongo:latest)
 
 ## Installation
 
