@@ -2,7 +2,7 @@
 
 Bearwear is a basic e-commerce app developed with Express.js and Node.js for the server side, React.js for the client side and MongoDb for the database.
 
-<<<<<<< HEAD
+
 # Requirements
 
 - Node.js (v20.6.1)
@@ -17,10 +17,7 @@ Bearwear is a basic e-commerce app developed with Express.js and Node.js for the
 3. Set up the MongoDB container using Docker.
 
 
-# Visuals
-=======
 # Visuals 
->>>>>>> 3e5d4cb8295130e9c6499bf3943af8ada6449957
 
 ![homepage](https://github.com/ellipapaioannou1/ecommerce-app-project/assets/64350200/ccce8623-3d74-40a1-b3b1-4d0a39d5e038)
 
